@@ -11,12 +11,11 @@
  * @param {[id: string]} req.params
  * @param {CbServer.Resp} resp
  *
- * @typedef {{prefix: string, entity_id: string, component_id: string, mfe_settings: Record<string, unknown>}} InstallParams
+ * @typedef {{prefix: string, entity_id: string, component_id: string, mfe_settings: Record<string, unknown>}} UninstallParams
  */
 
-function {{component_prefix}}_install(req, resp) {
+function componentPrefix_uninstall(req, resp) {
   const params = req.params;
-  const mfe_settings = params.mfe_settings;
-  //component install behavior here. Initialize an instance of the component for use
+  //component uninstall behavior here, undo any steps done in the install service
   resp.success('Success');
 }

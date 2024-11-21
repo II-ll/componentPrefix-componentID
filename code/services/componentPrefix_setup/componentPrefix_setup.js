@@ -14,7 +14,7 @@
  * @typedef {{prefix: string, entity_id: string, component_id: string, mfe_settings: Record<string, unknown>}} setupParams
  */
 
-function {{component_prefix}}_setup(req, resp) {
+function componentPrefix_setup(req, resp) {
   const params = req.params;
   //component setup behavior here initialize any external databases, bucket sets, etc.
   resp.success('Success');

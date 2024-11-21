@@ -11,11 +11,12 @@
  * @param {[id: string]} req.params
  * @param {CbServer.Resp} resp
  *
- * @typedef {{prefix: string, entity_id: string, component_id: string, mfe_settings: Record<string, unknown>}} UpdateParams
+ * @typedef {{prefix: string, entity_id: string, component_id: string, mfe_settings: Record<string, unknown>}} InstallParams
  */
 
-function {{component_prefix}}_update(req, resp) {
+function componentPrefix_install(req, resp) {
   const params = req.params;
-  //component update behavior here. Allow the user to update an instance of the component
+  const mfe_settings = params.mfe_settings;
+  //component install behavior here. Initialize an instance of the component for use
   resp.success('Success');
 }

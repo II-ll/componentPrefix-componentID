@@ -1,9 +1,9 @@
 {
   "attributes": [
     {
-      "attribute_name": "{{component_id}}_attribute",
+      "attribute_name": "componentID_attribute",
       "attribute_type": "number",
-      "attribute_label": "{{component_id}} attribute"
+      "attribute_label": "componentID attribute"
     }
   ],
   "eventTypes": [
@@ -14,10 +14,10 @@
         "send_teams_message"
       ],
       "closed_states": [],
-      "description": "Event type for {{component_id}}",
+      "description": "Event type for componentID",
       "has_lifecycle": false,
-      "id": "{{component_id}}_event_type",
-      "label": "{{component_id}} Event Type",
+      "id": "componentID_event_type",
+      "label": "componentID Event Type",
       "open_states": [],
       "priority": 2,
       "severity": 3
@@ -25,9 +25,9 @@
   ],
   "ruleTypes": [
     {
-      "label": "{asset_type_label} {{component_id}}",
+      "label": "{asset_type_label} componentID",
       "event_type_ids": [
-        "{{component_id}}_event_type"
+        "componentID_event_type"
       ],
       "include_timeframe": false,
       "is_invalid": false,
@@ -62,8 +62,8 @@
                   "suffix": "",
                   "equal": "",
                   "greaterThanInclusive": "is greater than",
-                  "attribute": "{{component_id}}_attribute",
-                  "attribute_label": "{{component_id}} attribute"
+                  "attribute": "componentID_attribute",
+                  "attribute_label": "componentID attribute"
                 }
               },
               {
@@ -91,7 +91,7 @@
             },
             "relationship": {
               "operator": "greaterThanInclusive",
-              "attribute": "{{component_id}}_attribute",
+              "attribute": "componentID_attribute",
               "attribute_type": "state",
               "duration": {
                 "value": 0,
@@ -103,11 +103,11 @@
         ]
       },
       "custom_id": "",
-      "event_type_id": "{{component_id}}_event_type",
+      "event_type_id": "componentID_event_type",
       "id": "",
       "is_disabled": false,
       "is_invalid": false,
-      "label": "{{component_id}} on {asset_type_label}",
+      "label": "componentID on {asset_type_label}",
       "priority": 2,
       "rule_type_id": "",
       "severity": 3,
